@@ -1,0 +1,28 @@
+Current Version: 0.0.0
+Target Version: 1.0.0
+
+This document outlines what is required to get Hustlemony from the current version to 1.0.0.
+
+- [ ] Plug in social media accounts on supported media platforms (Facebook, Nextdoor, Craigslist for now)
+- [ ] Add query to get the available jobs (Python for web scraping components + some AI components)
+- [ ] Turn available jobs into a list that can be consumed by the user (FastAPI)
+- [ ] Build a thin client for applying, looking similar to a job posting site (Svelte)
+- [ ] Add a feature to store templates based on the type of job.
+- [ ] "Gig type" filters
+- [ ] Add automation for mass applying
+- [ ] Add automation for mass deleting
+- [ ] Add feature for opportunity tracking
+- [ ] Add notifications feature
+- [ ] Basic analytics
+
+Project flow:
+1. Put together a quick and dirty way to grab a set of posts from social media. We will do one social media 
+platform at a time. I think that Nextdoor is the candidate that we should go with, for now. Tackle Facebook next, and
+Craigslist last.
+2. Figure out how to perform semantic filtering. (HARD step, in my opinion)
+3. Build a thin client in Svelte for displaying the available postings.
+4. Build template storage front + back ends.
+5. Build an automated applying feature for first Nextdoor, then Facebook, then Craigslist.
+6. Plug in automations for mass applying and mass deleting into thin client.
+7. Add analytics with helpful metrics into a web app dashboard.
+8. Get this project hosted somewhere so that I can access it from anywhere and not just my home office.
